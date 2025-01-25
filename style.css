@@ -1,0 +1,647 @@
+/* Default code Starts here */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-wrap: pretty;
+    /* border: 1px solid red; */
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+    /* font-family: "Roboto Condensed", sans-serif; */
+    /* font-family: "Inter", sans-serif; */
+    font-family: "Arial", sans-serif;
+    line-height: 1.5;
+    font-size: 1.6rem;
+    -webkit-font-smoothing: antialiased;
+    font-optical-sizing: auto;
+    color: #555;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6,
+p {
+    text-wrap: balance;
+}
+
+input,
+textarea,
+button {
+    font-family: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+:root {
+    --primaryColor: #555;
+    --secondaryColor: #2684cd;
+    --darkColor: #330300;
+    --lightColor: #aaa;
+    --regularFont: 1.4rem;
+    --headingFont: 2rem;
+    --ffPrimary: Arial, Helvetica, sans-serif;
+    --ffSecondary: "Inter", sans-serif;
+}
+
+/* project standard classes Starts */
+
+.align {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.componentSpacing {
+    padding: 3rem 0rem;
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0rem 2rem;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0rem 2rem;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0rem 2rem;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    padding: 0rem 2rem;
+}
+
+.dflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dflex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* project standard classes Ends */
+
+/* Default code Ends here */
+
+/* :::PARENT CONTAINER Code Starts here::: */
+
+header {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+}
+
+/* :::PARENT CONTAINER Code Ends here::: */
+/* :::PARENT CONTAINER Code Ends here::: */
+
+/* :::HEADER Code Starts hereE::: */
+/* Navbar code */
+.navContainer {
+    /* background-color: #660600; */
+}
+
+.navBar {
+    /* background-color: #660600; */
+    border-bottom: 1px solid #c5bdbd42;
+}
+
+.navBody {
+    /* background-color: #ffffff; */
+
+}
+
+.logoBlock {
+    /* height: 6rem;
+     width:auto;*/
+    /* background-color: #312b2b; */
+}
+
+.logo {
+    height: 4rem;
+    width: auto;
+    justify-content: center;
+    margin-left: -15rem;
+}
+
+.logo img {
+    aspect-ratio: 6/0.6;
+}
+
+.navLinksBlock {}
+
+/* .navLinks{
+     display: flex;
+     justify-content: space-between;
+ } */
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    /* background-color: #330300; */
+
+}
+
+.links li {
+    list-style-type: none;
+    /* background-color: #ffffff; */
+}
+
+.links a {
+    text-decoration: none;
+    color: var(--primaryColor);
+    font-family: var(--ffPrimary);
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+.links a:hover{
+   color: var(--lightColor);
+}
+
+/* Navbar code */
+
+/* Hero Section code */
+.heroContainer {}
+
+.heroSection {
+    border-bottom: 1px solid #c5bdbd42;
+}
+
+.heroheadBody {}
+
+.heroheadBlock {}
+
+.heroHead {}
+
+.heroHead h1 {
+    font-size: 4.5rem;
+}
+
+.qubitcirBody {}
+
+.qubitcirBlock {}
+
+.qubitcir {
+    /* width: 100px;
+      height: 100px; */
+    /* background-color: #3498db;
+      color: #ffffff;
+     border-radius: 50%;
+     padding: 2rem 9rem; */
+    margin: 0 0 0 46px;
+    width: 21.3rem;
+    height: 20.5rem;
+    text-align: center;
+    color: #eee;
+    padding: 0 15px;
+    font-size: 1.6rem;
+    gap:1rem;
+}
+.qubitcir h4{
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 1.7rem;
+}
+
+.cir1 {
+    background: url(./assets/images/cir1.png);
+}
+
+.cir2 {
+    background: url(./assets/images/cir2.png);
+}
+
+.cir3 {
+    background: url(./assets/images/cir3.png);
+}
+
+.cir4 {
+    background: url(./assets/images/cir4.png);
+}
+
+/* Hero Section code */
+/* :::HEADER Code Ends here::: */
+
+
+/* :::MAIN Code Starts here::: */
+/* quantumContainer code */
+.quantumContainer{
+
+}
+.quantum{
+ 
+}
+.quantumtopBody{
+
+}
+.topBlock{
+  text-align: center;
+}
+.parasec p{
+  font-style: italic; 
+  font-size: 2rem;
+}
+.quantumimgBody{
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+}
+.quantumimgBlock{
+   width: 70%;
+   margin: auto;
+}
+.quantumimg{
+  aspect-ratio: 7/4;
+}
+.quantumcontentBody{
+
+}
+.quantumcontentBlock{
+
+}
+.quantumcontent{
+    
+}
+.quantumcontent p{
+    font-style: italic;
+    font-weight: 500;
+    padding: 0.5rem; 
+}
+/* quantumContainer code */
+
+/* blogsContainer code */
+.blogsContainer{
+ 
+}
+.blogs{
+    border-bottom: 1px solid #c5bdbd42;
+}
+.blogsBody{
+
+}
+.videoBlock{
+
+}
+.blogvideo h4{
+    font-style: italic;
+    font-weight: 600;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+.blogvideo h5{
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1.6rem;
+    padding-top: 4rem;
+}
+.blogsContentBlock h4{
+    font-style: italic;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.blogsContent{
+  padding: 1rem;
+  text-align: justify;
+}
+.blog1 span a{
+   color: var(--secondaryColor);
+   font-size: 1.8rem;
+}
+.blog1{
+    border-bottom: 1px solid #000;
+    padding: 1rem;
+    font-style: italic;
+}
+.blog2 span a{
+    color: var(--secondaryColor);
+    font-size: 1.8rem;
+}
+.blog2{
+    border-bottom: 1px solid #000;
+   padding: 1rem;
+   font-style: italic;
+}
+.posttxt{
+    font-size: 2.3rem; 
+    font-style: italic;
+    color: var(--lightColor);
+}
+.blogsbtnBody{
+}
+.btnBlock{
+    width: 50%;
+    margin: auto;
+   display: flex;
+   justify-content: left;
+   padding-top: 8rem;
+}
+.btns{
+   /* gap:3rem; */
+   width: 100%;
+   margin: auto;
+   justify-content: left;
+   display: flex;
+   margin-left: -32rem;
+
+}
+.btns button{
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    color: var(--secondaryColor);
+   width: 100%;
+   margin: auto;
+   font-size: 1.8rem;
+   font-style: italic;
+}
+button:hover{
+    color: var(--primaryColor);
+}
+.navlinksBlock #iconToggle {
+    display: none;
+}
+
+.navlinksBlock .hamburgerIcon {
+    display: none;
+}
+
+.navlinksBlock.hamburgerIcon{
+    display: block;
+    
+}
+/* blogsContainer code */
+/* :::MAIN Code Ends here::: */
+
+
+/* :::FOOTER Code Starts here::: */
+/* footerContainer code */
+.footerContainer{
+
+}
+.footer{
+
+}
+.footerBody{
+
+}
+.footerBlock{
+
+}
+.footerlink{
+    font-style: italic;
+    gap: 80rem;
+}
+.footerlink a{
+    color: var(--secondaryColor);
+}
+.footerlink button{
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    color: var(--secondaryColor);
+   width: 100%;
+   margin: auto;
+   font-size: 1.8rem;
+   font-style: italic;
+}
+/* footerContainer code */
+
+/* :::FOOTER Code Ends here::: */
+
+
+/* ::::: RESPONSIVE DESIGN DEVICE SIZES ::::: */
+
+/* for Responsive Target the ROW Code (display:grid) */
+
+/* Small devices (landscape phones, upto 576px and below) */
+/* @media (width <=576px) */
+@media (max-width: 576px) {
+
+    .grid-1,
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
+
+    .logo{
+        margin-left:0rem ;
+    } 
+    .navLinksBlock{
+        display: none;
+    }
+    .navLinksBlock #iconToggle{
+        display: none;
+    }
+    
+    .navLinksBlock .hamburgerIcon{
+        display: none;
+    }
+    .links{
+        display: none;
+    }
+    .qubitcir{
+        margin: 0px;
+    }
+    .heroContainer{
+        /* background-color: #2684cd; */
+    }
+    .heroHead h1 {
+        font-size: 3rem;
+    }
+    .qubitcirBody {
+       width: 50%;
+       margin: auto;
+    }
+    .blogsContent{
+        padding-top: -1rem;
+        padding-right: 0rem;
+    }
+    .blogsbtnBody{
+        font-size: 1rem;
+    }
+    .btnBlock{
+       padding-top: 2rem;
+       width: 100%;
+       margin: auto;
+    }
+    .btns{
+       gap:1rem;
+       margin-left: -0rem;
+       width: 100%;
+       margin: auto;
+    }
+    .footerlink{
+        gap:15rem;
+    }
+    .navlinksBlock .hamburgerIcon {
+        display: block;
+        border: 1.5px solid #000000;
+        padding: 0.25rem 0.75rem 0.1rem;
+        font-size: 2rem;
+        border-radius: 0.25rem;
+        color: #5f5b5b;
+        align-items: center;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        cursor: pointer;
+    }
+    .links{
+        flex-direction: column;
+        display: none;
+        justify-content: center;
+
+    }
+    .links li{
+        background-color: var(--lightColor);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid #000000;
+        
+    }
+    .links li a{
+        padding: 0.75rem 0rem;
+        color: #000000;
+    }
+    .links li:last-child{
+        border-bottom: none;
+    }
+    #iconToggle:checked ~ .links {
+        display: flex;
+    }
+}
+
+/* Medium devices (tablets, upto 768px and above) */
+/* @media (min-width: 577px) and (max-width: 768px) */
+@media (width >=577px) and (width <=768px) {
+    /* write code here */
+    .qubitcirBody {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .heroHead h1 {
+        font-size: 3rem;
+    }
+    .blogsbtnBody{
+        font-size: 1rem;
+    }
+    .btnBlock{
+       padding-top: 2rem;
+       width: 100%;
+       margin: auto;
+    }
+    .btns{
+       gap:1rem;
+       margin-left: -0rem;
+       width: 100%;
+       margin: auto;
+    }
+    .footerlink{
+        gap:15rem;
+    }
+    /* .navlinkBlock .hamburgerIcon{
+        display: block;
+    } */
+}
+
+
+/* Large devices (Laptops, upto 992px and above) */
+/* @media (min-width: 769px) and (max-width: 992px) */
+@media (width >=769px) and (width <=992px) {
+    /* write code here */
+    .qubitcirBody {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .heroHead h1 {
+        font-size: 3rem;
+    }
+    .blogsbtnBody{
+        font-size: 1rem;
+    }
+    .btnBlock{
+       padding-top: 2rem;
+       width: 100%;
+       margin: auto;
+    }
+    .btns{
+       gap:1rem;
+       margin-left: -0rem;
+       width: 100%;
+       margin: auto;
+    }
+    .footerlink{
+        gap:15rem;
+    }
+}
+
+
+
+/* X-Large devices (large desktops, upto 1200px and above) */
+/* @media (min-width: 993px) and (max-width: 1200px) */
+@media (width >=993px) and (width <=1200px) {
+    /* write code here */
+}
+
+
+/* XX-Large devices (larger desktops, upto 1400px and above) */
+/* @media (min-width: 1200px)  */
+@media (width >=1200px) {
+    /* write code here */
+}
